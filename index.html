@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
+<head>
   <meta charset="UTF-8">
   <title>Odin's Project</title>
   <link rel="stylesheet" href="styles.css">
-</header>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
 
 <body>
-  <script>
-    // JavaScript goes here
-    const string = 'The revolution will not be televised.';
-    console.log(string);
-    //alert(string)
-    const button = document.querySelector('button');
-
-    function greet() {
-      const name = prompt('What is your name?');
-      alert(`Hello ${name}, nice to meet you!`);
-    }
-
-    button.addEventListener('click', greet);
-  </script>
-
   <div class="header">
-    <strong style="font-size:24px">Header Logo</strong>
+    <strong style="font-size:24px">0xW0lfie</strong>
     <div class="right-links">
       <a href="https://github.com/0xW0lfie">GitHub</a>
       <a href="https://www.linkedin.com/in/joshuakarkos">LinkedIn</a>
-      <a>Something Else</a>
     </div>
   </div>
 
@@ -43,7 +28,7 @@
   </div>
 
   <div class="content">
-    <p style="font-size:36px">Some random information.</p>
+    <p style="font-size:36px; margin-bottom: 10px;">Some random information.</p>
     <div class="boxes">
       <div class="box">
         <img src="./sneak.jpeg" height="80px" width="auto"></img>
@@ -63,19 +48,44 @@
       </div>
   </div>
 
+  <input id="textBox" type="text"></input>
+  <div id="output"></div>
+
   <div class="quote">
     <p style="font-size:36px"><em>This is some inspirational shit right here.</em></p>
-    <h6>-Odin, God of Death</h6>
+    <h6 style="margin-left: 300px; margin-top: 0px">-Odin, God of Death</h6>
   </div>
 
   <div class="signup">
     <div class="action">
-      <h3>Call to action!</h3>
-      <p>Sign up today!</p>
+      <h3 style="margin-bottom: 0px;">Call to action!</h3>
+      <p style="margin-top: 0px;">Sign up today!</p>
     </div>
-    <button>Sign up</button>
+    <button style="margin-top: 25px; border-color: white;">Sign up</button>
   </div>
 
   <div class="footer">0xW0lfie's Lair</div>
+
+  <script>
+    // JavaScript goes here
+    const string = 'The revolution will not be televised.';
+    console.log(string);
+    //alert(string)
+    const button = document.querySelector('button');
+
+    function greet() {
+      const name = prompt('What is your name?');
+      alert(string);
+    }
+
+    button.addEventListener('click', greet);
+
+    const textBox = document.querySelector("#textBox");
+    const output = document.querySelector("#output");
+
+    textBox.addEventListener('keydown', event =>
+    output.textContent = `You pressed "${event.key}".`);
+  </script>
+
 </body>
 </html>
