@@ -35,16 +35,17 @@
       <div class="box">
         <img src="./sneak.jpeg" height="80px" width="auto"></img>
         <div class="caption">this is some subtext under an illustration or image</div>
-        <a href="https://0xZero1.github.io/etchasketch.html">Etch-A-Sketch</a>
+        <a href="etchasketch.html">Etch-A-Sketch</a>
       </div>
       <div class="box">
         <img src="./skull.webp" height="80px" width="auto"></img>
         <div class="caption">this is some subtext under an illustration or image</div>
-        <a href="https://0xZero1.github.io/rockPaperScissors.html">Rock Paper Scissors</a>
+        <a href="rockPaperScissors.html">Rock Paper Scissors</a>
       </div>
       <div class="box">
         <img src="./sneak.jpeg" height="80px" width="auto"></img>
         <div class="caption">this is some subtext under an illustration or image</div>
+        <a href="drumKit/drumkit.html">Drum Kit</a>
       </div>
       <div class="box">
         <img src="./skull.webp" height="80px" width="auto"></img>
@@ -68,21 +69,23 @@
     <button style="margin-top: 25px; border-color: white;">Sign up</button>
   </div>
 
-  <div class="footer">0xW0lfie's Lair</div>
+  <div class="footer">Zero's Lair</div>
 
   <script>
     // JavaScript goes here
     const string = 'The revolution will not be televised.';
     console.log(string);
     //alert(string)
-    const button = document.querySelector('button');
+    const buttons = document.querySelectorAll('button');
 
     function greet() {
       const name = prompt('What is your name?');
       alert(string);
     }
 
-    button.addEventListener('click', greet);
+    const boxes = document.querySelectorAll('.box');
+    buttons.forEach(button => { button.addEventListener('click', greet);});
+
 
     const textBox = document.querySelector("#textBox");
     const output = document.querySelector("#output");

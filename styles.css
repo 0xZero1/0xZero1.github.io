@@ -3,6 +3,7 @@ body {
   padding:0;
 }
 
+
 .hero, .footer, .header{
   background-color: #1F2937;
   color: #F9FAF8;
@@ -57,6 +58,7 @@ button {
 .content {
   text-align: center;
   justify-content: space-between;
+  align-content: center;
 }
 
 .action {
