@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-a {
+a, .right-links {
   color: #E5E7EB;
   font-size: 18px;
   text-decoration: none;
