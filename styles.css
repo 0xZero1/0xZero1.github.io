@@ -28,7 +28,7 @@ a {
 
 .boxes {
   display:flex;
-  gap: 52px
+  gap: 52px;
 }
 
 button, .signup {

@@ -38,3 +38,27 @@ btn3.addEventListener('click', function (e) {
   console.log(e.target)
   e.target.style.background = 'blue';
 });
+
+
+var docFrag = document.createDocumentFragment();
+docFrag.appendChild(container);
+
+for(var i = 1; i < 17; i += 1) {
+    var div = document.createElement("div");
+    div.className = "finalBlock";
+    div.innerHTML = i;
+    document.body.appendChild(div);
+};
+
+
+//Count/While version of etchasketch
+count = 1;
+console.log(count);
+while (count < num+1) {
+  var square = document.createElement('div');
+  square.className = "box"
+  square.setAttribute('id', `box ${count}`);
+  //square.textContent = `I'm box ${count}!`;
+  box[i].appendChild(square);
+  count += 1;
+};
