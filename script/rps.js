@@ -2,7 +2,7 @@
 // Score:
 let userScore = 0;
 let compScore = 0;
-const round = document.querySelector('#container');
+const round = document.querySelector('#thebox');
 // Get computer's choice
 
 function getComputerChoice() {

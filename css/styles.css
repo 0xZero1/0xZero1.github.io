@@ -28,7 +28,7 @@ body {
 }
 
 .header-link {
-    display: flex;
+    display: inline;
     margin-left: auto;
     padding: 0px 100px 0px 0px;
 }
@@ -65,7 +65,7 @@ body {
     opacity: 0.7;
 }
 
-h1 {
+.hero-cta h1 {
     font-size: 48px;
     font-weight: bold;
     color: #F9FAF8;
@@ -186,4 +186,19 @@ h3 {
     background-color: #1F2937;
     color: #fff;
     font-family: 'Roboto', arial;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: gray;
+}
+
+.box {
+  min-height: 5px;
+  min-width: 5px;
+  flex: 1;
+  background-color: #1F2937;
+  float: center;
 }
